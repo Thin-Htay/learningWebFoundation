@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selection Color Example</title>
+    <style>
+        :root {
+            --pink: #ff046f;
+        }
+
+        /* Change the color of selected text */
+        *::selection {
+            background-color: var(--pink);
+            color: white;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .app {
+            background: red;
+            width: 200px;
+            left: 50%;
+            transform: translate(50%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Try selecting this text</h1>
+    <p>
+        Click and drag your mouse to highlight this sentence.
+        Instead of the normal blue highlight, you will see a pink background with white text!
+    </p>
+    <div class="app">
+        <p>hello</p>
+    </div>
+    <div style="width: 200px;transform: translate(50%);
+">Hello</div>
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+            left: 50%;
+            top: 100px;
+            transform: translate(-50%);
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+
+        .box1 {
+            position: absolute;
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            /* z-index: 1; */
+        }
+
+        .box2 {
+            position: absolute;
+            background-color: red;
+            color: white;
+            padding: 20px;
+            z-index: 1000;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+
+    <div class="box">I’m centered!</div>
+
+</body>
+
+</html>
